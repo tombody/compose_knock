@@ -4,12 +4,12 @@ Checks a corpus created from a Wikipedia dump file.
 
 import sys, time
 
-def check_corpus(input_file):
+def check_corpus(input_file,num_articles):
     
     """Reads some lines of corpus from text file"""
 
     while(1):
-        for lines in range(50):
+        for lines in range(int(num_articles)):
             print(input_file.readline())
         user_input = input('>>> Type \'STOP\' to quit or hit Enter key for more <<< ')
         if user_input == 'STOP':
@@ -31,10 +31,11 @@ def load_corpus(input_file):
 
 if __name__ == '__main__':
 
-    if len(sys.argv) != 2:
-        print('Usage: python check_wiki_corpus.py <corpus_file>')
+    if len(sys.argv) !=3:
+        print('Usage: python check_wiki_corpus.py <corpus_file> <number_of_articles>')
         sys.exit(1)
 
-    corpus_file = open(sys.argv[1],'r')
-    check_corpus(corpus_file)
-corpus = load_corpus(corpus_file)
+    user_inputs = sys.argv[1],sys.argv[2]
+    corpus_file = open(user_inputs[0],'r')
+    check_corpus(corpus_file, user_inputs[1])
+#corpus = load_corpus(corpus_file)
