@@ -14,7 +14,7 @@
         background: cornflowerblue;
     }
 
-    button {
+    /* button {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -27,17 +27,39 @@
         margin-left: auto;
         margin-right: auto;
         width: 40%;
+    } */
+
+    .loader {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 8px solid cornflowerblue;
+        border-top: 8px solid black;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
 </style>
 
 <body>
     <div class="ui middle aligned center aligned grid">
-        <div style="padding-top: 10%" class="column">
+        <div style="padding-top: 10%;" class="column">
             <button class="ui teal large button" id="button">Knock Knock</button>
-            <div style="padding-top: 2%; font-size: 1.5rem;"id="joke"></div>
+            <div style="padding-top: 2%; font-size: 1.5rem;" id="joke"></div>
         </div>
     </div>
 </body>
+
 <script src="app.js"></script>
 
 </html>
