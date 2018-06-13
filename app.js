@@ -55,7 +55,7 @@ const jokes = [
 'let \'s knock . who \'s there ! barbara ',
 'who ? les tell a more knock - knock joke ! ! ',
 'knock - knock joke ! knock , knock - who \'s there ! ari ! ari who ; ari - s - p - e - c , i m tired for you when i come ? . ',
-'let \'s knock ; who \'s there ! barbara ! barbara who of barbara - mary - mary ! ,'
+'let \'s knock ; who \'s there ! barbara ! barbara who of barbara - mary - mary ! ,',
 '<unk> . who ’s there . watson ? scott who ? watson the radio and you wo n’t even knock ! and who ’s there ',
 'knock , knock . ! who ’s there ? i m a . i adore who ? adore is between us . open up !', 
 'knock , knock who ? dozen who ? dozen all this knocking bother to do are already !.' ,
